@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_sales
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: CUSTOMER_ID
+        tests:
+          - not_null

@@ -6,3 +6,4 @@ sources:
     schema: DBT_DEV
     tables:
       - name: SALES
+      
