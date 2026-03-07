@@ -8,6 +8,7 @@ SELECT
     CUSTOMER_ID,
     ORDER_DATE,
     AMOUNT,
+    {{add_tax('AMOUNT') }} AS AMOUNT_WITH_TAX,
     CURRENT_TIMESTAMP() AS LOADED_AT
 FROM {{ source('raw','SALES') }}
 

@@ -2,12 +2,17 @@ version: 2
 
 models:
   - name: stg_sales
+    description: "Staging table for sales data"
     columns:
       - name: ORDER_ID
+        description: "Staging table for sales data"
         tests:
           - unique
           - not_null
 
       - name: CUSTOMER_ID
+        description: "Customer Id"
         tests:
           - not_null
+
+  
